@@ -80,6 +80,12 @@ header{
     }
 }
 
+.logo{
+    position: absolute;
+    top: 3.8%;
+    left: 48%;
+}
+
 .banner{
     position: absolute;
     top: 10%;
@@ -88,8 +94,32 @@ header{
 
 .botaozin{
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 40%;
+}
+
+.outlet{
+    position: absolute;
+    top: 35%;
+    left: 33%;
+}
+
+.frase{
+    position: absolute;
+    top: 55%;
+    left: 40%;
+}
+
+.desconto{
+    position: absolute;
+    top: 59%;
+    left: 30%;
+}
+
+.logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
 }
 
 .banner h1{
@@ -99,6 +129,8 @@ header{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 50;
     text-shadow: .3rem .4rem 2px rgba(0, 0, 0, 0.356);
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
     opacity: 0;
     animation: moverbanner 6s forwards;
 }
@@ -113,6 +145,69 @@ header{
     }
 }
 
+.outlet h2{
+    font-size: 8rem;
+    color: #f7c41e;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 50;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: zoomOUTLET 30s forwards;
+}
+
+@keyframes zoomOUTLET {
+    0%{
+        transform: scale(1.3);
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.frase h4{
+    font-size: 2rem;
+    color: rgba(0,0,0,0.8);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 50;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: zoomFRASE 30s forwards;
+}
+
+@keyframes zoomFRASE {
+    0%{
+        transform: scale(1.3);
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.desconto h3{
+    font-size: 8rem;
+    color: #f7c41e;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 50;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: zoomDESCONTO 30s forwards;
+}
+
+@keyframes zoomDESCONTO {
+    0%{
+        transform: scale(1.3);
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 .botaozin button{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgba(0,0,0,0.8);
@@ -122,7 +217,7 @@ header{
 background: -webkit-linear-gradient(to right, #FFD200, #F7971E);
 background: linear-gradient(to right, #FFD200, #F7971E);
 
-    padding: 1rem 3rem;
+    padding: 0.8rem 2rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -204,4 +299,89 @@ background: linear-gradient(to right, #FFD200, #F7971E);
 
 .social-midia i:hover{
     background-color: #eece66;
+}
+
+.container-galeria{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: 350px;
+    padding: 5px;
+    grid-gap: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.item-galeria{
+    position: relative;
+}
+
+.item-galeria #zoom .img-galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.95);
+    transition: 0.3s ease-in-out;
+}
+
+.container-galeria #zoom:hover .img-galeria{
+    transform: scale(1.1);
+}
+
+.h-1{
+    grid-row: span 1;
+}
+
+.h-2{
+    grid-row: span 2;
+}
+
+.w-1{
+    grid-column: span 1;
+}
+
+.w-2{
+    grid-column: span 2;
+}
+
+.newsletter{
+    width: 90%;
+    float: left;
+    background-color: #f7c41e;
+    padding: 40px 5%;
+}
+
+.newsletter h3{
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.newsletter p{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.newsletter form{
+    width: 100%;
+    float: left;
+    margin-top: 9px;
+}
+
+.newsletter form input {
+    width: 30%;
+    margin-right: 1%;
+    padding: 15px 10px; border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: initial;
+    float: left;
+}
+
+.newsletter button{
+    width: 18%;
+    background-color: #fff;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border-color: #fff;
+    float: left;
+    cursor: pointer;
 }
