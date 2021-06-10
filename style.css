@@ -420,3 +420,21 @@ background: linear-gradient(to right, #FFD200, #F7971E);
 .rodape p{
     color: #fff;
 }
+
+.produtos{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.produto img{
+    cursor: pointer;
+    width: 100%;
+ 
+}
+
+.produto p{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px 10px;
+}
