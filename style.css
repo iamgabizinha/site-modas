@@ -385,3 +385,38 @@ background: linear-gradient(to right, #FFD200, #F7971E);
     float: left;
     cursor: pointer;
 }
+
+.historia{
+    width: 100%;
+    margin: auto;
+}
+
+.conteudo{
+    display: table;
+    padding: 40px 5%;
+}
+
+.pagamento{
+    display: table-cell;
+  float: left;
+  padding: 10px 10%;
+}
+
+.texto{
+    display: table-cell;
+    font-size: 1.2em;
+    color: #868585;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    width: 55%;
+}
+
+.rodape{
+    width: 90%;
+    float: left;
+    background-color: #f7c41e;
+    padding: 20px 6%;
+}
+.rodape p{
+    color: #fff;
+}
